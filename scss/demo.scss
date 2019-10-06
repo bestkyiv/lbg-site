@@ -1,0 +1,174 @@
+/*
+Template Name: Wrapkit
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+
+@import 'variable';
+
+/*============================================================== 
+ This scss/css we made it from our predefine componenet 
+ we just copy that css and paste here you can also do that
+ ============================================================== */
+
+
+/*******************
+Header 1
+*******************/
+
+.h1-nav {
+    padding: 0px 0;
+    .navbar-nav .nav-item > .nav-link{
+        line-height: 70px;
+    }
+    .navbar-nav .nav-item {
+        margin: 0 20px;
+        .nav-link {
+            padding: 12px 0px;
+            color: $muted;
+            font-weight: 400;
+            
+        }
+        &:hover .nav-link{
+                color: $themecolor;
+            }
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+
+
+/*******************
+Static slide 1
+*******************/
+
+.static-slider1 {
+    h1 {
+        font-weight: 700;
+        line-height: 56px;
+        span {
+            border-bottom: 3px solid $success;
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .static-slider1 {
+        h1 {
+            font-weight: 700;
+            line-height: 36px;
+            font-size: 24px;
+        }
+    }
+}
+
+
+/*******************
+Filter section
+*******************/
+
+.filterby a {
+    padding: 10px;
+    font-weight: 400;
+    color: $bodytext;
+    &:hover {
+        color: $themecolor;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*******************
+Portfolio1
+*******************/
+.portfolio-box {
+    margin-top: 60px;
+    .filter {
+        .overlay-box {
+            margin-bottom: 30px;
+            position: relative;
+
+            .overlay {
+                position: absolute;
+                background: rgba(29, 200, 205, 0.9);
+                transition: 0.3s;
+                height: 0px;
+                width: 100%;
+                display: none;
+
+                padding-top: 30%;
+                .port-text {
+                    transition: 0.3s;
+                    position: absolute;
+                    top: 0px;
+                    width: 0px;
+                    text-align: center;
+                    h5 {
+                        color: $white;
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-bottom: 0px;
+                    }
+                    span {
+                        color: $white;
+                        font-size: 14px;
+                    }
+                }
+            }
+            &:hover {
+                .overlay {
+                    display: block;
+                    top: 0px;
+                    height: 100%;
+                    .port-text {
+                        top: 43%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*******************
+Client 1
+*******************/
+.client1{
+    .client-box{
+        margin:0px;
+        margin-top:40px;
+        border:1px solid $border;
+        [class*="col-"]{
+            min-height:130px;
+            border:1px solid $border;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+    }
+}
+
+/*******************
+footer social icons
+*******************/
+footer{
+.round-social{
+    a {
+        background:$border;
+        color:$muted;
+        width:40px;
+        height:40px;
+        line-height:40px;
+        &:hover{
+        color:$white;
+        }
+    }
+}
+}
