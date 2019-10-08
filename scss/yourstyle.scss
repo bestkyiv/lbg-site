@@ -366,6 +366,8 @@ File: scss
   }
 }
 
+
+
 .ebec-pyramid-card{
   height: 100%;
 }
@@ -375,3 +377,20 @@ File: scss
   background-position: center;
   background-repeat: no-repeat;
 }
+.course-tae{
+  color: #F26B2A;
+  font-weight: bolder;
+
+  h3{
+    color: #F26B2A;
+  }
+
+}
+.linking{
+  color: #1b1b1b;
+}
+.linking:hover{
+  color: #F26B2A;
+  font-weight: bolder;
+}
+

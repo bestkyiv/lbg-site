@@ -329,19 +329,6 @@ File: scss
 
 .course-tae {
   color: #F26B2A;
-  font-weight: bolder;
-}
-.course-tae h3 {
-  color: #F26B2A;
-}
-
-.linking {
-  color: #1b1b1b;
-}
-
-.linking:hover {
-  color: #F26B2A;
-  font-weight: bolder;
 }
 
 /*# sourceMappingURL=yourstyle.css.map */
