@@ -1,0 +1,22 @@
+{
+  "name": "lbgsite",
+  "version": "1.0.0",
+  "description": "lbgsite",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 3000 ./public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bestkyiv/lbg-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bestkyiv/lbg-site/issues"
+  },
+  "homepage": "https://github.com/bestkyiv/lbg-site#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
