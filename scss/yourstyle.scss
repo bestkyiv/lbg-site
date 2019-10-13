@@ -23,6 +23,26 @@ File: scss
 
 .wrap-feature7-box {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap-feature7-anim {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+
+  > img {
+    flex: 0 0 auto;
+  }
+
+  > h5 {
+    margin-top: 30px;
+  }
+
+  > p {
+    flex: 1 1 auto;
+  }
 }
 
 .wrap-feature3-box .card-body {
