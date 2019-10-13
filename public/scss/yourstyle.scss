@@ -10,6 +10,9 @@ File: scss
  You can write your style here and overwrite our style
  ============================================================== */
 
+html{
+  scroll-behavior: smooth;
+}
 .static-slider2{
   h1{
     font-size:60px;
