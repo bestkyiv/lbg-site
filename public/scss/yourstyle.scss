@@ -396,6 +396,7 @@ html{
 }
 
 .course-type-card{
+  min-height: 200px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -415,5 +416,8 @@ html{
 .linking:hover{
   color: #F26B2A;
   font-weight: bolder;
+}
+.card-border{
+  border: 1px solid rgba(120, 130, 140, 0.13);
 }
 
