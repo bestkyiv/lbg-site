@@ -320,7 +320,7 @@ html {
 
 .best-project-header__content-container {
   height: 100%;
-  padding: 100px 15px 50px;
+  padding: 80px 15px 0;
 }
 .best-project-header__bg-img-block {
   min-height: 600px;

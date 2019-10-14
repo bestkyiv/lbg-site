@@ -79,52 +79,6 @@ Filter section
 }
 
 /*******************
-Portfolio1
-*******************/
-.portfolio-box {
-  margin-top: 60px;
-}
-.portfolio-box .filter .overlay-box {
-  margin-bottom: 30px;
-  position: relative;
-}
-.portfolio-box .filter .overlay-box .overlay {
-  position: absolute;
-  background: rgba(29, 200, 205, 0.9);
-  transition: 0.3s;
-  height: 0px;
-  width: 100%;
-  display: none;
-  padding-top: 30%;
-}
-.portfolio-box .filter .overlay-box .overlay .port-text {
-  transition: 0.3s;
-  position: absolute;
-  top: 0px;
-  width: 0px;
-  text-align: center;
-}
-.portfolio-box .filter .overlay-box .overlay .port-text h5 {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 0px;
-}
-.portfolio-box .filter .overlay-box .overlay .port-text span {
-  color: #ffffff;
-  font-size: 14px;
-}
-.portfolio-box .filter .overlay-box:hover .overlay {
-  display: block;
-  top: 0px;
-  height: 100%;
-}
-.portfolio-box .filter .overlay-box:hover .overlay .port-text {
-  top: 43%;
-  width: 100%;
-}
-
-/*******************
 Client 1
 *******************/
 .client1 .client-box {

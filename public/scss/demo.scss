@@ -85,59 +85,6 @@ Filter section
 
 
 /*******************
-Portfolio1
-*******************/
-.portfolio-box {
-    margin-top: 60px;
-    .filter {
-        .overlay-box {
-            margin-bottom: 30px;
-            position: relative;
-
-            .overlay {
-                position: absolute;
-                background: rgba(29, 200, 205, 0.9);
-                transition: 0.3s;
-                height: 0px;
-                width: 100%;
-                display: none;
-
-                padding-top: 30%;
-                .port-text {
-                    transition: 0.3s;
-                    position: absolute;
-                    top: 0px;
-                    width: 0px;
-                    text-align: center;
-                    h5 {
-                        color: $white;
-                        font-size: 18px;
-                        font-weight: 500;
-                        margin-bottom: 0px;
-                    }
-                    span {
-                        color: $white;
-                        font-size: 14px;
-                    }
-                }
-            }
-            &:hover {
-                .overlay {
-                    display: block;
-                    top: 0px;
-                    height: 100%;
-                    .port-text {
-                        top: 43%;
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-/*******************
 Client 1
 *******************/
 .client1{
