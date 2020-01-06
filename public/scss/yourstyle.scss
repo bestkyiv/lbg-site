@@ -421,3 +421,13 @@ html{
   border: 1px solid rgba(120, 130, 140, 0.13);
 }
 
+.switch-language-block{
+  display: flex;
+  width: 32px;
+  height: 32px;
+  a, .language-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+

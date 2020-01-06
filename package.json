@@ -4,7 +4,8 @@
   "description": "lbgsite",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -p 3000 ./public"
+    "start": "npm run build && http-server -p 3000 ./public",
+    "build": "node build.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/bestkyiv/lbg-site#readme",
   "dependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "lodash": "^4.17.15",
+    "rimraf": "^3.0.0"
   }
 }

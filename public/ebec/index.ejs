@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
-    <title>Хакатон INT20H | BEST Kyiv | Board of European Students of Technology</title>
+    <title>EBEC | BEST Kyiv | Board of European Students of Technology</title>
     <!-- Bootstrap Core CSS -->
     <link href="/assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- This is for the animation CSS -->
@@ -62,28 +62,28 @@
                     <div class="collapse navbar-collapse hover-dropdown text-uppercase" id="h5-info">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item dropdown mega-dropdown active">
-                                <a class="nav-link dropdown-toggle" href="/">Головна</a>
+                                <a class="nav-link dropdown-toggle" href="/"><%= __('Головна', 'Home') %></a>
                             </li>
                             <li class="nav-item dropdown mega-dropdown active">
-                                <a class="nav-link dropdown-toggle" href="/#about">Про нас</a>
+                                <a class="nav-link dropdown-toggle" href="/#about"><%= __('Про нас', 'About us') %></a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="/#projects" id="h6-dropdown"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Проекти <i class="fa fa-angle-down m-l-5"></i></a>
+                                    <%= __("Проекти","Projects") %> <i class="fa fa-angle-down m-l-5"></i></a>
                                 <ul class="b-none dropdown-menu font-14 animated fadeInUp">
-                                    <li><a class="dropdown-item" href="/courses" target="_blank">Освітні курси</a></li>
-                                    <li><a class="dropdown-item" href="/ebec" target="_blank">EBEC</a></li>
-                                    <li><a class="dropdown-item" href="/int20h" target="_blank">INT20H</a></li>
+                                    <li><a class="dropdown-item" href="<%= __('/', '/en/')%>courses" target="_blank"><%= __("Освітні курси", "BEST Courses") %></a></li>
+                                    <li><a class="dropdown-item" href="<%= __('/', '/en/')%>ebec" target="_blank"><%= __("EBEC") %></a></li>
+                                    <li><a class="dropdown-item" href="<%= __('/', '/en/')%>int20h" target="_blank"><%= __("INT20H") %></a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown mega-dropdown active">
-                                <a class="nav-link dropdown-toggle" href="/#contacts">Контакти</a>
+                                <a class="nav-link dropdown-toggle" href="/#contacts"><%= __("Контакти", "Contacts") %></a>
                             </li>
                         </ul>
                         <div class="switch-language-block">
-                            <a href="/en/int20h">
-                                <img class="language-icon" src="/images/icons/flag-uk.svg" alt="switch language">
+                            <a href="<%= __('/en/ebec', '/ebec')%>">
+                                <img class="language-icon" src="/images/icons/flag-<%= __('uk', 'ua')%>.svg" alt="switch language">
                             </a>
                         </div>
                     </div>
@@ -110,23 +110,22 @@
             <div class="bg-light">
                 <section id="slider-sec" class="slider9 best-project-header">
                     <div id="slider9" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="7000">
-                        <div class="row bg-int20h-primary-gradiant">
+                        <div class="row bg-ebec-orange-gradiant-left">
                             <div class="col-md-7 d-block d-md-none">
-                                <div class="best-project-header__bg-img-block int20h"></div>
+                                <div class="best-project-header__bg-img-block ebec"></div>
                             </div>
                             <div class="col-md-5">
                                 <div class="container best-project-header__content-container">
                                     <div class="row best-project-header__content">
                                         <div class="col-md-11 col-lg-9 ml-auto">
-                                            <h1 data-animation="animated fadeInLeft" class="title text-white font-bold m-0 p-b-40">Хакатон INT20H</h1>
-                                            <p class="p-0 m-b-40 best-project-header__text" data-animation="animated fadeInUp">Хакатон – змагання для ІТ-спеціалістів. Вони працюють протягом 20 годин над розв’язанням цікавих задач у режимі нон-стоп. Кожен хакатон –  це виклик для учасників та організаторів.<br/><br/>INT20H - один з найбільших студентських хакатонів України. Ми надаємо студентам можливість розвинути себе за рамками університету, поспілкуватись з представниками українських IT-компаній та дізнатись про кар’єрні можливості в цій галузі.
-                                            </p>
+                                            <h1 data-animation="animated fadeInLeft" class="title text-white font-bold m-0 p-b-40">EBEC</h1>
+                                            <p class="p-0 m-b-40 best-project-header__text" data-animation="animated fadeInUp">EBEC (European BEST Engineering Competition) – це інженерні змагання, які кожного року об’єднують студентів з усієї Європи.<br/><br/>Мета проекту – надати студентам можливість удосконалити свої вміння та навички, проявити креативність та навчитися працювати у команді.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-7 d-none d-none d-md-block">
-                                <div class="best-project-header__bg-img-block int20h"></div>
+                                <div class="best-project-header__bg-img-block ebec"></div>
                             </div>
                         </div>
                     </div>
@@ -137,117 +136,149 @@
             <!-- ============================================================== -->
 
             <!-- ============================================================== -->
-            <!-- Feature 6  -->
+            <!-- Feature 12  -->
             <!-- ============================================================== -->
             <div class="spacer">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-6">
-                            <img width="100%" src="/images/int20h/int20h-logo.png" alt="int20h logo" />
+                            <img width="100%" src="/images/ebec/ebec-logo.png" alt="ebec logo" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="spacer feature6">
+            <div class="feature12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="m-b-30 m-t-20">Як це відбувається?</h2>
+                            <h4 class="text-muted font-light">Команді студентів потрібно знайти оптимальне рішення інженерної задачі.<br/><br/>Змагання відбуваються у двох категоріях:</h4>
+                            <div class="row">
+                                <div class="col-md-12 m-t-30">
+                                    <h4 class="font-medium">Team Design</h4>
+                                    <p>Команди вирішують практичний кейс, маючи обмежену кількість матеріалів. Результатом повинен стати пристрій, який виконує необхідні дії. Завдання даної категорії охоплює загальні області інженерії: механіку, електроніку, радіотехніку, автоматизацію.</p>
+                                </div>
+                                <div class="col-md-12 m-t-30">
+                                    <h4 class="font-medium">Case Study</h4>
+                                    <p>Команди вирішують аналітичний кейс. Результатом якого повинна стати стратегія дій, яка пропонує ефективне та оптимальне рішення. Завданням цієї частини є аналіз, дослідження та тестування певної технічної проблеми. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row wrap-feature-12">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-12"><img src="/images/ebec/ebec-categories-1.jpg" class="rounded img-shadow img-responsive" alt="wrapkit" /></div>
+                                        <div class="col-md-12"><img src="/images/ebec/ebec-categories-2.jpg" class="rounded img-shadow img-responsive" alt="wrapkit" /></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 uneven-box">
+                                    <div class="row">
+                                        <div class="col-md-12"><img src="/images/ebec/ebec-categories-3.jpg" class="rounded img-shadow img-responsive" alt="wrapkit" /></div>
+                                        <div class="col-md-12"><img src="/images/ebec/ebec-categories-4.jpg" class="rounded img-shadow img-responsive" alt="wrapkit" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <!-- ============================================================== -->
+            <!-- End of Feature 12 -->
+            <!-- ============================================================== -->
+
+            <!-- ============================================================== -->
+            <!-- Feature 11 -->
+            <!-- ============================================================== -->
+            <div class="bg-light spacer feature11">
                 <div class="container">
                     <!-- Row  -->
                     <div class="row justify-content-center">
                         <div class="col-md-7 text-center">
-                            <h2 class="title">Категорії</h2>
-                            <h6 class="subtitle">Хакатон проходить у трьох категоріях:</h6>
+                            <h2 class="title">EBEC Pyramid</h2>
+                            <h6 class="subtitle">Змагання проходять в три етапи:</h6>
+                        </div>
+                    </div>
+                    <!-- Row  -->
+                    <div class="row justify-content-center">
+                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1200">
+                            <img width="100%" src="/images/ebec/pyramid.png" alt="pyramid"/>
                         </div>
                     </div>
                     <!-- Row  -->
                     <div class="row m-t-40">
                         <!-- Column -->
-                        <div class="col-md-4 wrap-feature6-box">
-                            <div class="card bg-info-gradiant text-white" data-aos="fade-right" data-aos-duration="1200">
+                        <div class="col-md-4 wrap-feature11-box">
+                            <div class="card card-shadow ebec-pyramid-card" data-aos="fade-right" data-aos-duration="1200">
                                 <div class="card-body">
                                     <div class="icon-space">
-                                        <div class="icon-round"><i class="icon-Internet"></i></div>
+                                        <div class="icon-round bg-ebec-orange-gradiant"><i class="icon-Pencil"></i></div>
                                     </div>
-                                    <h6 class="font-medium text-white">Web Development</h6>
-                                    <p class="m-t-20">Реалізація веб-сервісів та інтерактивних веб-додатків</p>
+                                    <h5 class="font-medium">Локальний раунд</h5>
+                                    <p class="m-t-20">Команди студентів КПІ змагаються у двох категоріях</p>
                                 </div>
                             </div>
                         </div>
                         <!-- Column -->
-                        <!-- Column -->
-                        <div class="col-md-4 wrap-feature6-box">
-                            <div class="card bg-int20h-primary text-white" data-aos="fade-down" data-aos-duration="1200">
+                        <div class="col-md-4 wrap-feature11-box">
+                            <div class="card card-shadow ebec-pyramid-card" data-aos="fade-up" data-aos-duration="1200">
                                 <div class="card-body">
                                     <div class="icon-space">
-                                        <div class="icon-round"><i class="icon-Hand-TouchSmartphone"></i></div>
+                                        <div class="icon-round bg-ebec-green-gradiant"><i class="icon-Idea"></i></div>
                                     </div>
-                                    <h6 class="font-medium text-white">Mobile Development</h6>
-                                    <p class="m-t-20">Реалізація мобільних додатків</p>
+                                    <h5 class="font-medium">Національний раунд</h5>
+                                    <p class="m-t-20">За місце в Фіналі змагаються переможці локальних раундів з Києва, Львова, Вінниці та Запоріжжя. </p>
                                 </div>
                             </div>
                         </div>
                         <!-- Column -->
-                        <!-- Column -->
-                        <div class="col-md-4 wrap-feature6-box">
-                            <div class="card bg-danger-gradiant text-white" data-aos="fade-left" data-aos-duration="1200">
+                        <div class="col-md-4 wrap-feature11-box">
+                            <div class="card card-shadow ebec-pyramid-card" data-aos="fade-left" data-aos-duration="1200">
                                 <div class="card-body">
                                     <div class="icon-space">
-                                        <div class="icon-round"><i class="icon-Numbering-List"></i></div>
+                                        <div class="icon-round bg-ebec-blue-gradiant"><i class="icon-Plane"></i></div>
                                     </div>
-                                    <h6 class="font-medium text-white">Data Science</h6>
-                                    <p class="m-t-20">Розв’язання технічних задач методами Data Science</p>
+                                    <h5 class="font-medium">Фінал</h5>
+                                    <p class="m-t-20">Переможці національних та регіональних етапів борються на міжнародному рівні за звання кращих у Європі інженерів.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Column -->
                     </div>
                 </div>
             </div>
             <!-- ============================================================== -->
-            <!-- End of Feature 6 -->
+            <!-- End of Feature 11 -->
             <!-- ============================================================== -->
 
             <div class="spacer">
                 <div class="container justify-content-center">
-                    <h1 class="text-center">Як це було у 2019?</h1>
+                    <h1 class="text-center">Як це було у 2018?</h1>
                     <!-- Row  -->
                     <div class="owl-carousel owl-theme port1 m-t-40">
                         <!-- item -->
                         <div class="item" data-aos="fade-right">
-                            <img src="/images/int20h/int20h-photo-1.jpg" alt="int20h" />
+                            <img src="/images/ebec/gallery-photo-1.jpg" alt="ebec" />
                         </div>
                         <!-- item -->
                         <!-- item -->
                         <div class="item" data-aos="fade-right">
-                            <img src="/images/int20h/int20h-photo-2.jpg" alt="int20h" />
+                            <img src="/images/ebec/gallery-photo-2.jpg" alt="ebec" />
                         </div>
                         <!-- item -->
                         <!-- item -->
                         <div class="item" data-aos="fade-right">
-                            <img src="/images/int20h/int20h-photo-3.jpg" alt="int20h" />
+                            <img src="/images/ebec/gallery-photo-3.jpg" alt="ebec" />
                         </div>
                         <!-- item -->
                         <!-- item -->
                         <div class="item" data-aos="fade-right">
-                            <img src="/images/int20h/int20h-photo-4.jpg" alt="int20h" />
+                            <img src="/images/ebec/gallery-photo-4.jpg" alt="ebec" />
                         </div>
                         <!-- item -->
                         <!-- item -->
                         <div class="item" data-aos="fade-right">
-                            <img src="/images/int20h/int20h-photo-5.jpg" alt="int20h" />
-                        </div>
-                        <!-- item -->
-                        <!-- item -->
-                        <div class="item" data-aos="fade-right">
-                            <img src="/images/int20h/int20h-photo-6.jpg" alt="int20h" />
-                        </div>
-                        <!-- item -->
-                        <!-- item -->
-                        <div class="item" data-aos="fade-right">
-                            <img src="/images/int20h/int20h-photo-7.jpg" alt="int20h" />
-                        </div>
-                        <!-- item -->
-                        <!-- item -->
-                        <div class="item" data-aos="fade-right">
-                            <img src="/images/int20h/int20h-photo-8.jpg" alt="int20h" />
+                            <img src="/images/ebec/gallery-photo-5.jpg" alt="ebec" />
                         </div>
                         <!-- item -->
                     </div>

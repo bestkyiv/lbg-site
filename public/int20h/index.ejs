@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
-    <title>Хакатон INT20H | BEST Kyiv | Board of European Students of Technology</title>
+    <title><%=__('Хакатон INT20H', 'INT20H Hackathon') %> | BEST Kyiv | Board of European Students of Technology</title>
     <!-- Bootstrap Core CSS -->
     <link href="/assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- This is for the animation CSS -->
@@ -62,28 +62,28 @@
                     <div class="collapse navbar-collapse hover-dropdown text-uppercase" id="h5-info">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item dropdown mega-dropdown active">
-                                <a class="nav-link dropdown-toggle" href="/">Головна</a>
+                                <a class="nav-link dropdown-toggle" href="/"><%= __('Головна', 'Home') %></a>
                             </li>
                             <li class="nav-item dropdown mega-dropdown active">
-                                <a class="nav-link dropdown-toggle" href="/#about">Про нас</a>
+                                <a class="nav-link dropdown-toggle" href="/#about"><%= __('Про нас', 'About us') %></a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="/#projects" id="h6-dropdown"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Проекти <i class="fa fa-angle-down m-l-5"></i></a>
+                                    <%= __("Проекти","Projects") %> <i class="fa fa-angle-down m-l-5"></i></a>
                                 <ul class="b-none dropdown-menu font-14 animated fadeInUp">
-                                    <li><a class="dropdown-item" href="/courses" target="_blank">Освітні курси</a></li>
-                                    <li><a class="dropdown-item" href="/ebec" target="_blank">EBEC</a></li>
-                                    <li><a class="dropdown-item" href="/int20h" target="_blank">INT20H</a></li>
+                                    <li><a class="dropdown-item" href="<%= __('/', '/en/')%>courses" target="_blank"><%= __("Освітні курси", "BEST Courses") %></a></li>
+                                    <li><a class="dropdown-item" href="<%= __('/', '/en/')%>ebec" target="_blank"><%= __("EBEC") %></a></li>
+                                    <li><a class="dropdown-item" href="<%= __('/', '/en/')%>int20h" target="_blank"><%= __("INT20H") %></a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown mega-dropdown active">
-                                <a class="nav-link dropdown-toggle" href="/#contacts">Контакти</a>
+                                <a class="nav-link dropdown-toggle" href="/#contacts"><%= __("Контакти", "Contacts") %></a>
                             </li>
                         </ul>
                         <div class="switch-language-block">
-                            <a href="/en/int20h">
-                                <img class="language-icon" src="/images/icons/flag-uk.svg" alt="switch language">
+                            <a href="<%= __('/en/int20h', '/int20h')%>">
+                                <img class="language-icon" src="/images/icons/flag-<%= __('uk', 'ua')%>.svg" alt="switch language">
                             </a>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                                 <div class="container best-project-header__content-container">
                                     <div class="row best-project-header__content">
                                         <div class="col-md-11 col-lg-9 ml-auto">
-                                            <h1 data-animation="animated fadeInLeft" class="title text-white font-bold m-0 p-b-40">Хакатон INT20H</h1>
+                                            <h1 data-animation="animated fadeInLeft" class="title text-white font-bold m-0 p-b-40"><%=__('Хакатон INT20H', 'INT20H Hackathon') %></h1>
                                             <p class="p-0 m-b-40 best-project-header__text" data-animation="animated fadeInUp">Хакатон – змагання для ІТ-спеціалістів. Вони працюють протягом 20 годин над розв’язанням цікавих задач у режимі нон-стоп. Кожен хакатон –  це виклик для учасників та організаторів.<br/><br/>INT20H - один з найбільших студентських хакатонів України. Ми надаємо студентам можливість розвинути себе за рамками університету, поспілкуватись з представниками українських IT-компаній та дізнатись про кар’єрні можливості в цій галузі.
                                             </p>
                                         </div>
