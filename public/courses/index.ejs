@@ -123,14 +123,14 @@
                                             <h1 data-animation="animated fadeInLeft"
                                                 class="title text-white font-bold m-0 p-b-40"><%= __('Освітні курси', 'BEST Courses')%></h1>
                                             <p class="p-0 m-b-40 best-project-header__text"
-                                               data-animation="animated fadeInUp">BEST курси – це двотижневий захід,
-                                                протягом якого учасники відвідують лекції від професорів університету
-                                                або експертів з компаній та воркшопи, що спрямовані на надання
-                                                додаткової освіти студентам за межами університетської програми.</p>
+                                               data-animation="animated fadeInUp">
+                                               <%= __('BEST курси – це двотижневий захід, протягом якого учасники відвідують лекції від професорів університету або експертів з компаній та воркшопи, що спрямовані на надання додаткової освіти студентам за межами університетської програми.', 'BEST Courses are two-week events during which participants attend lectures from university professors or company experts and workshops aimed at providing additional education to students outside the university program.') %>
+                                               
+                                            </p>
                                             <p class="p-0 m-b-40 best-project-header__text"
-                                               data-animation="animated fadeInUp">Окрім інтенсивної академічної частини,
-                                                учасникам пропонуються різноманітні соціальні активності для культурного
-                                                обміну.
+                                               data-animation="animated fadeInUp">
+                                               <%= __('Окрім інтенсивної академічної частини, учасникам пропонуються різноманітні соціальні для культурного обміну.', 'Besides the intensive academic part, participants are offered a variety of social activities for cultural exchange.') %>
+                                               
                                             </p>
                                         </div>
                                     </div>
@@ -163,15 +163,22 @@
                 <div class="container">
                     <div class="d-flex">
                         <div class="display-7 align-self-center">
-                            <h3 class="">Хочеш потрапити на курс, але не знаєш, з чого почати?</h3>
-                            <h6 class="font-16 subtitle">Ми підготували покроковий список дій до твоєї незабутньої
-                                подорожі!</h6>
+                            <h3 class="">
+                            	<%= __('Хочеш потрапити на курс, але не знаєш, з чого почати?', 'Want to get on a course but don't know where to start?') %>
+                            	
+                            </h3>
+                            <h6 class="font-16 subtitle">
+                            	<%= __('Ми підготували покроковий список дій до твоєї незабутньої подорожі!', 'How to register on the website and write motivation letters') %>
+                            	
+                            </h6>
                         </div>
                         <div class="ml-auto m-t-10 m-b-10">
                             <a href="https://docs.google.com/document/d/1kuVyKG4FLg4c0gcb8V_FfECvwpuhxUX2y9tnYICxLqI/edit?usp=sharing"
                                target=”_blank” rel=”noopener”
-                               class="btn btn-md btn-best-courses-gradiant btn-arrow"><span>   Переглянути   <i
-                                            class="ti-arrow-right"></i></span></a>
+                               class="btn btn-md btn-best-courses-gradiant btn-arrow"><span>
+                               	<%= __('Переглянути', 'Read here') %>
+                               	
+                               	<i class="ti-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -188,7 +195,10 @@
                     <!-- Row  -->
                     <div class="row justify-content-center">
                         <div class="col-md-7 text-center">
-                            <h2 class="title">Які бувають освітні курси?</h2>
+                            <h2 class="title">
+                            <%= __('Які бувають освітні курси?', 'Types of courses') %>
+	                        
+	                    </h2>
                         </div>
                     </div>
                     <!-- Row  -->
@@ -242,13 +252,17 @@
                             <div class="card" data-aos="flip-left" data-aos-duration="1200">
                                 <div class="card-body">
                                     <div class="text-box">
-                                        <h3 class="title">Наш курс</h3>
-                                        <h6 class="subtitle">Раз на рік ми організовуємо курс в <b>Києві</b> для
-                                            іноземних студентів. <br/><br/>У 2019 році це був курс із <b>Data
-                                                Science</b>. Учасники мали можливість ознайомитись з базовими
-                                            алгоритмами машинного навчання та аналізу даних та відвідати провідні
-                                            українські компаній у цій галузі, як наприклад, Grammarly.<br/><br/>Також до
-                                            курсу приєднались 15 локальних студентів з <b>КПІ</b>.</h6>
+                                        <h3 class="title">
+	                                        <%= __('Наш курс', 'Our course') %>
+	                                        
+	                                    </h3>
+                                        <h6 class="subtitle">
+                                        	<% if (LANG === 'UA') { %>
+											    Раз на рік ми організовуємо курс в <b>Києві</b> для іноземних студентів. <br/><br/>У 2019 році це був курс із <b>Data Science</b>. Учасники мали можливість ознайомитись з базовими алгоритмами машинного навчання та аналізу даних та відвідати провідні українські компаній у цій галузі, як наприклад, Grammarly.<br/><br/>Також до курсу приєднались 15 локальних студентів з <b>КПІ</b>.
+											<% } else { %>
+												Once a year we organize a course in <b>Kyiv</b> for foreign students.<br/><br/>The previous course was on <b>Data Science</b>. The participants had the opportunity to get acquainted with basic algorithms of machine learning and data analysis and to visit leading Ukrainian companies in this field, such as Grammarly.<br/><br/>Also, 15 local students from <b>KPI</b> joined the course.
+											<% } %>                                        	
+                                        </h6>
                                     </div>
                                 </div>
                             </div>
@@ -268,7 +282,10 @@
 
             <div class="spacer">
                 <div class="container justify-content-center">
-                    <h1 class="text-center">Трішки фото</h1>
+                    <h1 class="text-center">
+                    	<%= __('Трішки фото', 'Some photos') %>
+                    	
+                    </h1>
                     <!-- Row  -->
                     <div class="owl-carousel owl-theme port1 m-t-40">
                         <!-- item -->
@@ -324,14 +341,23 @@
                     <div class="d-flex">
                         <div class="align-self-center course-tae">
 
-                            <p class="p-0 m-b-40 best-project-header__text"> Двічі на рік ми
-                                організовуємо воркшопи з написання мотиваційного листа на курс – <b>Travel and Education
-                                    with BEST</b>.
-                                На цьому івенті ми даємо корисні поради, як написати хороший лист та заповнити
-                                аплікаційну форму.</p>
+                            <p class="p-0 m-b-40 best-project-header__text"> 
+                            	<% if (LANG === 'UA') { %>
+								    Двічі на рік ми організовуємо воркшопи з написання мотиваційного листа на курс – <b>Travel and Education with BEST</b>. На цьому івенті ми даємо корисні поради, як написати хороший лист та заповнити аплікаційну форму.
+								<% } else { %>
+									Also, twice a year we organize workshops for writing a motivation letter for the course - <b>Travel and Education with BEST</b>. At this event, we provide helpful tips on how to write a good letter and fill out an application form.
+								<% } %>
+                            </p>
 
-                            <h3>Є питання? <a href="https://t.me/shliapnik" class="linking">Звернись до нас<i
-                                            class="ti-arrow-right"></i></a></h3>
+                            <h3>
+                            	<%= __('Є питання?', 'Any questions?') %>
+                            	 
+                            	<a href="https://t.me/shliapnik" class="linking">
+	                            	<%= __('Звернись до нас', 'Contact us') %>
+	                            	
+	                            	<i class="ti-arrow-right"></i>
+	                            </a>
+                            </h3>
 
                         </div>
                     </div>
@@ -357,7 +383,7 @@
                         <div class="d-flex no-block m-b-10 text-white">
                             <div class="display-7 m-r-20 "><i class="icon-Map-Marker2"></i></div>
                             <div class="info">
-                                <span class="db m-t-5">Київ, вул. Борщагівська, 144А</span>
+                                <span class="db m-t-5"><%= __('Київ, вул. Борщагівська, 144А', 'Kyiv, 144a vul. Borshagivska') %> </span>
                             </div>
                         </div>
                     </div>
