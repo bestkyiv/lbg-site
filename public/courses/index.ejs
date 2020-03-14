@@ -62,10 +62,10 @@
                     <div class="collapse navbar-collapse hover-dropdown text-uppercase" id="h5-info">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item dropdown mega-dropdown active">
-                                <a class="nav-link dropdown-toggle" href="/"><%= __('Головна', 'Home') %></a>
+                                <a class="nav-link dropdown-toggle" href="<%= __('/', '/en/')%>"><%= __('Головна', 'Home') %></a>
                             </li>
                             <li class="nav-item dropdown mega-dropdown active">
-                                <a class="nav-link dropdown-toggle" href="/#about"><%= __('Про нас', 'About us') %></a>
+                                <a class="nav-link dropdown-toggle" href="<%= __('/', '/en/')%>#about"><%= __('Про нас', 'About us') %></a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="/#projects" id="h6-dropdown"
@@ -78,7 +78,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown mega-dropdown active">
-                                <a class="nav-link dropdown-toggle" href="/#contacts"><%= __("Контакти", "Contacts") %></a>
+                                <a class="nav-link dropdown-toggle" href="<%= __('/', '/en/')%>#contacts"><%= __("Контакти", "Contacts") %></a>
                             </li>
                         </ul>
                         <div class="switch-language-block">
@@ -383,7 +383,9 @@
                         <div class="d-flex no-block m-b-10 text-white">
                             <div class="display-7 m-r-20 "><i class="icon-Map-Marker2"></i></div>
                             <div class="info">
-                                <span class="db m-t-5"><%= __('Київ, вул. Борщагівська, 144А', 'Kyiv, 144a vul. Borshagivska') %> </span>
+                                <a href="https://goo.gl/maps/uASzZm82HxGLMyYE9" target="_blank" class="db white-link m-t-5">
+                                    <%= __('Київ, вул. Борщагівська, 144А', 'Kyiv, vul. Borshchahivska, 144A') %>
+                                </a>
                             </div>
                         </div>
                     </div>
