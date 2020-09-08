@@ -65,6 +65,9 @@ function findFilesWithExtension(base, ext, files, result = []) {
     }
   });
   return result.map(p =>
-    path.relative("./public", path.resolve(p)).replace(/^(?:\.\.\/)+/, "")
+    //unix path
+    //path.relative("./public", path.resolve(p)).replace(/^(?:\.\.\/)+/, "")
+    //windows path
+    path.relative("./public", path.resolve(p)).replace(/^(?:\.\.\\)+/, "")
   );
 }
