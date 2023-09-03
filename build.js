@@ -64,10 +64,11 @@ function findFilesWithExtension(base, ext, files, result = []) {
       }
     }
   });
-  return result.map(p =>
-    //unix path
-    //path.relative("./public", path.resolve(p)).replace(/^(?:\.\.\/)+/, "")
-    //windows path
-    path.relative("./public", path.resolve(p)).replace(/^(?:\.\.\\)+/, "")
-  );
+  return result.map(p => {
+    // unix path
+    if (process.platform !== 'win32') return path.relative("./public", path.resolve(p)).replace(/^(?:\.\.\/)+/, "");
+    // windows path
+    return path.relative("./public", path.resolve(p)).replace(/^(?:\.\.\\)+/, "");
+
+  });
 }
