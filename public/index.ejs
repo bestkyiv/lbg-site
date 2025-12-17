@@ -61,9 +61,13 @@ To find the next task follow the answer.
             <div class="container">
                 <!-- Header 1 code -->
                 <nav class="navbar navbar-expand-lg h1-nav">
-                    <a class="navbar-brand" href="<%= __('/', '/en/') %>"><img class="best-navbar-logo"
-                                                                               src="/images/best-kyiv-logo-big.png"
-                                                                               alt="wrapkit"/></a>
+                    <a class="navbar-brand" href="<%= __('/', '/en/') %>">
+                        <img class="best-navbar-logo" src="/images/best-kyiv-logo-big.png" alt="BEST Kyiv"/>
+                    </a>
+                    <!-- KPI logo kept separate to avoid grouping with header images -->
+                    <div class="navbar-kpi d-flex align-items-center ml-2">
+                        <img class="kpi-navbar-logo d-none d-md-inline" src="/images/kpi-logo-blue.png" alt="KPI"/>
+                    </div>
                     <button class="navbar-toggler text-black-50" type="button" data-toggle="collapse"
                             data-target="#h5-info" aria-expanded="false" aria-label="Toggle navigation"><span
                                 class="ti-menu"></span></button>
@@ -76,6 +80,10 @@ To find the next task follow the answer.
                             <li class="nav-item dropdown mega-dropdown active">
                                 <a class="nav-link dropdown-toggle"
                                    href="<%= __('/', '/en/') %>#about"><%= __('Про нас', 'About us') %></a>
+                            </li>
+                            <li class="nav-item dropdown mega-dropdown active">
+                                <a class="nav-link dropdown-toggle"
+                                   href="<%= __('/', '/en/') %>#university"><%= __('Університет', 'University') %></a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="/#projects" id="h6-dropdown"
@@ -168,12 +176,12 @@ To find the next task follow the answer.
                                 <br/>
                                 <br/>
                                 <% if (LANG === 'UA') { %>
-                                    У КПІ діє місцева локальна група – <b>BEST Kyiv</b>, яка
+                                    У НТУУ «КПІ » діє місцева локальна група – <b>BEST Kyiv</b>, яка
                                     працює для того, щоб збагачувати світогляд студентів та поширювати цінності
                                     європейської
                                     культури.
                                 <% } else { %>
-                                    Our local group in Kyiv Polytechnic Institute – <b>BEST Kyiv</b> - is working to
+                                    Our local group in NTUU "Igor Sikorsky Kyiv Polytechnic Institute" – <b>BEST Kyiv</b> - is working to
                                     spread the values of the European culture.
                                 <% } %>
                             </p>
@@ -207,6 +215,27 @@ To find the next task follow the answer.
             </div>
             <!-- ============================================================== -->
             <!-- End Feature 27 -->
+            <!-- ============================================================== -->
+
+            <!-- ============================================================== -->
+            <!-- Feature 25 -->
+            <!-- ============================================================== -->
+            <a name="university"></a>
+            <div class="spacer feature-kpi">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1200">
+                            <h2 class="title"><%= __('Університет', 'University') %></h2>
+                            <p class="m-t-20"><%= __('Осередок BEST Kyiv було створено у 2008 році при <b>Національному університеті "Київський політехнічний інститут імені Ігоря Сікорського"</b>.<br/>Нашими участники є проактивні студенти універститету, яких згуртувала спільна мета – зробити студентське життя кпішників яскравішим та кориснішим.', 'The BEST Kyiv branch was established in 2008 at the <b>National University "Igor Sikorsky Kyiv Polytechnic Institute"</b>.<br/>Our members are proactive university students who are united by a common goal—to make student life at KPI unforgettable and meaningful.') %></p>
+                        </div>
+                        <div class="col-lg-4 text-center" data-aos="fade-left" data-aos-duration="1200">
+                            <img src="/images/kpi-logo-blue.png" alt="Igor Sikorsky Kyiv Polytechnic Institute" class="img-fluid kpi-full-logo"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Feature 25 -->
             <!-- ============================================================== -->
 
             <!-- ============================================================== -->
@@ -618,7 +647,7 @@ To find the next task follow the answer.
                             <div class="info">
                                 <a href="https://goo.gl/maps/uASzZm82HxGLMyYE9" target="_blank" rel="noopener"
                                    class="db white-link m-t-5">
-                                    <%= __('Київ, вул. Борщагівська, 144А', 'Kyiv, vul. Borshchahivska, 144A') %>
+                                    <%= __('Київ, вул. Борщагівська, 144А', 'Kyiv, 144A Borshchahivska St.') %>
                                 </a>
                             </div>
                         </div>
