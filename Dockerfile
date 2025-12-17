@@ -27,8 +27,11 @@ RUN npm install -g http-server && \
 # Copy built files from builder
 COPY --from=builder /app/public ./public
 
-# Expose port
-EXPOSE 3000
+# Verify files exist
+RUN ls -la ./public/ && echo "Build successful!"
 
-# Start server on all interfaces
-CMD ["http-server", "-a", "0.0.0.0", "-p", "3000", "./public"]
+# Expose port
+EXPOSE 80
+
+# Start server on all interfaces (port 80)
+CMD ["http-server", "-a", "0.0.0.0", "-p", "80", "./public"]
