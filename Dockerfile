@@ -20,8 +20,9 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-# Install http-server globally
-RUN npm install -g http-server
+# Install http-server and wget for healthcheck
+RUN npm install -g http-server && \
+    apk add --no-cache wget
 
 # Copy built files from builder
 COPY --from=builder /app/public ./public
