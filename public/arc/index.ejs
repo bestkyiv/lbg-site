@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
-    <title>EBEC | BEST Kyiv | Board of European Students of Technology</title>
+    <title>ARC | BEST Kyiv | Board of European Students of Technology</title>
     <!-- Bootstrap Core CSS -->
     <link href="/assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- This is for the animation CSS -->
@@ -82,7 +82,7 @@
                                     <%= __("Проекти","Projects") %> <i class="fa fa-angle-down m-l-5"></i></a>
                                 <ul class="b-none dropdown-menu font-14 animated fadeInUp">
                                     <li><a class="dropdown-item" href="<%= __('/', '/en/')%>courses"><%= __("Освітні курси", "BEST Courses") %></a></li>
-                                    <li><a class="dropdown-item" href="<%= __('/', '/en/')%>ebec"><%= __("EBEC") %></a></li>
+                                    <li><a class="dropdown-item" href="<%= __('/', '/en/')%>arc"><%= __("ARC Kyiv") %></a></li>
                                     <li><a class="dropdown-item" href="<%= __('/', '/en/')%>int20h"><%= __("INT20H") %></a></li>
                                 </ul>
                             </li>
@@ -91,7 +91,7 @@
                             </li>
                         </ul>
                         <div class="switch-language-block">
-                            <a href="<%= __('/en/ebec', '/ebec')%>">
+                            <a href="<%= __('/en/arc', '/arc')%>">
                                 <img class="language-icon" src="/images/icons/flag-<%= __('uk', 'ua')%>.svg" alt="switch language">
                             </a>
                         </div>
@@ -127,14 +127,13 @@
                                 <div class="container best-project-header__content-container">
                                     <div class="row best-project-header__content">
                                         <div class="col-md-11 col-lg-9 ml-auto">
-                                            <h1 data-animation="animated fadeInLeft" class="title text-white font-bold m-0 p-b-40">EBEC</h1>
+                                            <h1 data-animation="animated fadeInLeft" class="title text-white font-bold m-0 p-b-40">ARC KYIV</h1>
                                             <p class="p-0 m-b-40 best-project-header__text" data-animation="animated fadeInUp">
                                                 <% if (LANG === 'UA') { %>
-                                                    EBEC (European BEST Engineering Competition) – це інженерні змагання, які кожного року з усієї Європи.<br/><br/>Мета проекту – надати студентам можливість удосконалити свої вміння, проявити креативність та навчитися працювати у команді.
+                                                    ARC KYIV (Assemble & Research Competition) – це інженерні змагання для студентів усіх університетів Києва. Вони не мають рівнів, а проводяться лише в один етап з періодичністю раз на рік.<br/><br/>Мета проекту – надати студентам можливість удосконалити свої вміння, проявити креативність та навчитися працювати у команді.
                                                 <% } else { %>
-                                                    EBEC (European BEST Engineering Competition) is an engineering competition that brings together students from all over Europe every year.<br/><br/>The goal of the project is to give students the opportunity to improve their skills, be creative and learn how to work as a team.
+                                                    ARC KYIV (Assemble & Research Competition) is an engineering competition for students from all universities in Kyiv. There are no levels, and it is held only once a year.<br/><br/>The goal of the project is to give students the opportunity to improve their skills, show their creativity, and learn to work in a team.
                                                 <% } %>
-                                                
                                             </p>
                                         </div>
                                     </div>
@@ -158,7 +157,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-6">
-                            <img width="100%" src="/images/ebec/ebec-logo.png" alt="ebec logo" />
+                            <img width="75%" src="/images/ebec/arc-logo.jpg" alt="arc logo" />
                         </div>
                     </div>
                 </div>
@@ -172,25 +171,22 @@
                                 
                             </h2>
                             <h4 class="text-muted font-light">
-                                <%= __('Команді студентів потрібно знайти оптимальне рішення інженерної задачі.', 'Teams of students have to find an optimal solution to an engineering case. The competition comes in two categories: Team Design and Case Study.') %>
-                                
-                                <br/><br/>
+                                <%= __('Команді студентів потрібно знайти оптимальне рішення інженерної задачі.', 'Teams of students have to find an optimal solution to an engineering case.') %>
+                                <br/>
                                 <%= __('Змагання відбуваються у двох категоріях:', 'Competitions take place in two categories:') %>
                                 
                             </h4>
                             <div class="row">
                                 <div class="col-md-12 m-t-30">
-                                    <h4 class="font-medium">Team Design</h4>
+                                    <h4 class="font-medium">Innovative Design</h4>
                                     <p>
-                                        <%= __('Команди вирішують практичний кейс, маючи обмежену кількість матеріалів. Результатом повинен стати пристрій, який виконує необхідні дії. Завдання даної категорії охоплює загальні області інженерії: механіку, електроніку, радіотехніку, автоматизацію.', 'The teams must resolve a practical case, while having access to a limited amount of resources. The result is expected to be a device, which completes the necessary tasks.  This category\'s assignment covers general engineering fields: Mechanics, Electronics, Radio engineering, Automation') %>
-                                        
+                                        <%= __('Практична частина змагань. Завдання охоплює найрізноманітніші області інженерії: електроніку, радіотехніку, механіку <br/>Ціль – створити пристрій, механізм чи розробити модель, що виконує необхідні функції для поставленої задачі.', 'Practical part of the competition. The task covers a wide range of engineering fields: electronics, radio engineering, mechanics.<br/>The goal is to create a device, mechanism, or develop a model that performs the necessary functions for the task at hand.') %>
                                     </p>
                                 </div>
                                 <div class="col-md-12 m-t-30">
                                     <h4 class="font-medium">Case Study</h4>
                                     <p>
-                                        <%= __('Команди вирішують аналітичний кейс. Результатом якого повинна стати стратегія дій, яка пропонує ефективне та оптимальне рішення. Завданням цієї частини є аналіз, дослідження та тестування певної технічної проблеми. ', 'The teams must resolve an analytical case. The result is expected to be a strategy, which provides an effective and optimal solution to the presented problems. This category\'s assignment consists of an analysis and examination of a given technical problem.') %>
-                                        
+                                        <%= __('Ця категорія є теоретичною. Завданням є аналіз, дослідження, обговорення, тестування.<br/>Ціль – створити стратегічну модель дій для оптимального рішення: адміністративної, економічної, виробничої, соціальної проблеми. ', 'This category is theoretical. The task is to analyze, research, discuss, and test.<br/>The goal is to create a strategic model of actions for an optimal solution: administrative, economic, production, social problems.') %>
                                     </p>
                                 </div>
                             </div>
@@ -219,128 +215,6 @@
             <!-- End of Feature 12 -->
             <!-- ============================================================== -->
 
-            <!-- ============================================================== -->
-            <!-- Feature 11 -->
-            <!-- ============================================================== -->
-            <div class="bg-light spacer feature11">
-                <div class="container">
-                    <!-- Row  -->
-                    <div class="row justify-content-center">
-                        <div class="col-md-7 text-center">
-                            <h2 class="title">EBEC Pyramid</h2>
-                            <h6 class="subtitle">
-                                <%= __('Змагання проходять в три етапи:', 'The contest has three rounds:') %>
-                                
-                            </h6>
-                        </div>
-                    </div>
-                    <!-- Row  -->
-                    <div class="row justify-content-center">
-                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1200">
-                            <img width="100%" src="/images/ebec/pyramid.png" alt="pyramid"/>
-                        </div>
-                    </div>
-                    <!-- Row  -->
-                    <div class="row m-t-40">
-                        <!-- Column -->
-                        <div class="col-md-4 wrap-feature11-box">
-                            <div class="card card-shadow ebec-pyramid-card" data-aos="fade-right" data-aos-duration="1200">
-                                <div class="card-body">
-                                    <div class="icon-space">
-                                        <div class="icon-round bg-ebec-orange-gradiant"><i class="icon-Pencil"></i></div>
-                                    </div>
-                                    <h5 class="font-medium">
-                                        <%= __('Локальний раунд', 'Local Round') %>
-                                        
-                                    </h5>
-                                    <p class="m-t-20">
-                                        <%= __('Команди студентів КПІ змагаються у двох категоріях', 'Teams of KPI students compete in both categories') %>
-                                        
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column -->
-                        <div class="col-md-4 wrap-feature11-box">
-                            <div class="card card-shadow ebec-pyramid-card" data-aos="fade-up" data-aos-duration="1200">
-                                <div class="card-body">
-                                    <div class="icon-space">
-                                        <div class="icon-round bg-ebec-green-gradiant"><i class="icon-Idea"></i></div>
-                                    </div>
-                                    <h5 class="font-medium">
-                                        <%= __('Національний раунд', 'National Round') %>
-                                        
-                                    </h5>
-                                    <p class="m-t-20">
-                                        <%= __('За місце в Фіналі змагаються переможці локальних раундів з Києва, Львова, Вінниці та Запоріжжя. ', 'the winners of local rounds from Kyiv, Lviv, Vinnytsya and Zaporizhya will compete for a spot in the grand final') %>
-                                        
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column -->
-                        <div class="col-md-4 wrap-feature11-box">
-                            <div class="card card-shadow ebec-pyramid-card" data-aos="fade-left" data-aos-duration="1200">
-                                <div class="card-body">
-                                    <div class="icon-space">
-                                        <div class="icon-round bg-ebec-blue-gradiant"><i class="icon-Plane"></i></div>
-                                    </div>
-                                    <h5 class="font-medium">
-                                        <%= __('Фінал', 'Final Round') %>
-                                               
-                                    </h5>
-                                    <p class="m-t-20">
-                                        <%= __('Переможці національних та регіональних етапів борються на міжнародному рівні за звання кращих у Європі інженерів.', 'the winners from the regional and national rounds will battle on an international stage for the title of the best engineers Europe has to offer!') %>
-                                        
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ============================================================== -->
-            <!-- End of Feature 11 -->
-            <!-- ============================================================== -->
-
-            <div class="spacer">
-                <div class="container justify-content-center">
-                    <h1 class="text-center">
-                        <%= __(' Як це було у 2018?', 'How was it in 2018?') %>
-                       
-                    </h1>
-                    <!-- Row  -->
-                    <div class="owl-carousel owl-theme port1 m-t-40">
-                        <!-- item -->
-                        <div class="item" data-aos="fade-right">
-                            <img src="/images/ebec/gallery-photo-1.jpg" alt="ebec" />
-                        </div>
-                        <!-- item -->
-                        <!-- item -->
-                        <div class="item" data-aos="fade-right">
-                            <img src="/images/ebec/gallery-photo-2.jpg" alt="ebec" />
-                        </div>
-                        <!-- item -->
-                        <!-- item -->
-                        <div class="item" data-aos="fade-right">
-                            <img src="/images/ebec/gallery-photo-3.jpg" alt="ebec" />
-                        </div>
-                        <!-- item -->
-                        <!-- item -->
-                        <div class="item" data-aos="fade-right">
-                            <img src="/images/ebec/gallery-photo-4.jpg" alt="ebec" />
-                        </div>
-                        <!-- item -->
-                        <!-- item -->
-                        <div class="item" data-aos="fade-right">
-                            <img src="/images/ebec/gallery-photo-5.jpg" alt="ebec" />
-                        </div>
-                        <!-- item -->
-                    </div>
-                </div>
-            </div>
-
-
         </div>
         <!-- ============================================================== -->
         <!-- End Container fluid  -->
@@ -356,35 +230,36 @@
                         <div class="d-flex no-block m-b-10 text-white">
                             <div class="display-7 m-r-20 "><i class="icon-Map-Marker2"></i></div>
                             <div class="info">
-                                <a href="https://goo.gl/maps/uASzZm82HxGLMyYE9" target="_blank" class="db white-link m-t-5">
-                                    <%= __('Київ, вул. Борщагівська, 144А', 'Kyiv, 144A Borshchahivska St.') %>
+                                <a href="https://goo.gl/maps/uASzZm82HxGLMyYE9" target="_blank" rel="noopener"
+                                   class="db white-link m-t-5">
+                                    <%= __('Київ, НТУУ «КПІ»', 'Kyiv, NTUU "KPI"') %>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <!-- coluumn -->
+
                     <!-- coluumn -->
                     <div class="col-lg-4">
                         <div class="d-flex no-block m-b-10">
-                            <div class="display-7 m-r-20 text-white"><i class="icon-Mail"></i></div>
+                            <div class="display-7 m-r-20 text-white"><i class="fa fa-telegram"></i></div>
                             <div class="info">
-                                <a href="mailto:inbox@best-kyiv.org"
-                                   class="db white-link m-t-5">inbox@best-kyiv.org</a>
+                                <a href="https://t.me/BestKyivQuestionsBot" target="_blank" rel="noopener"
+                                   class="db white-link m-t-5">@BestKyivQuestionsBot</a>
                             </div>
                         </div>
                     </div>
-                    <!-- coluumn -->
+
                     <!-- coluumn -->
                     <div class="col-lg-4 ml-auto">
                         <div class="ml-auto round-social dark">
-                            <a target="_blank" class="link" href="https://www.facebook.com/best.kyiv/"><i
+                            <a class="link"  href="https://www.facebook.com/best.kyiv/" target="_blank"><i
                                         class="fa fa-facebook"></i></a>
-                            <a target="_blank" class="link" href="https://t.me/bestkyiv"><i class="fa fa-telegram"></i></a>
+                            <a class="link" href="https://t.me/bestkyiv" target="_blank"><i class="fa fa-telegram"></i></a>
 
-                            <a target="_blank" class="link" href="https://www.instagram.com/best_kyiv/"><i class="fa fa-instagram"></i></a>
-                            <a target="_blank" class="link" href="https://www.flickr.com/photos/153367601@N05/albums"><i
+                            <a class="link" href="https://www.instagram.com/best_kyiv/" target="_blank"><i
+                                        class="fa fa-instagram"></i></a>
+                            <a class="link" href="https://www.flickr.com/photos/153367601@N05/albums" target="_blank"><i
                                         class="fa fa-flickr"></i></a>
-
                         </div>
                     </div>
                 </div>

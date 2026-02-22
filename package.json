@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npm run build && http-server -p 3000 ./public",
     "build": "sass public/scss/style.scss:public/css/style.css public/scss/demo.scss:public/css/demo.css public/scss/yourstyle.scss:public/css/yourstyle.css && node build.js",
+    "package:ftp": "node scripts/package-site.js",
     "dev": "nodemon -e js,ejs build.js"
   },
   "repository": {
