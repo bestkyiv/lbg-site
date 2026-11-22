@@ -48,7 +48,11 @@ async function selectiveCopy(baseSrc, baseDest) {
         await copyDirFiltered(fullPath, path.join(baseDest, rel));
       } else if (entry.isFile()) {
         const ext = path.extname(entry.name).toLowerCase();
-        if (allowedExts.has(ext) || ext === '.html') {
+        if (
+          entry.name === '.htaccess' ||
+          allowedExts.has(ext) ||
+          ext === '.html'
+        ) {
           const destFile = path.join(baseDest, rel);
           await fsp.mkdir(path.dirname(destFile), { recursive: true });
           await fsp.copyFile(fullPath, destFile);
